@@ -1,0 +1,265 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+}
+.small-size {
+	font-size: 11px;
+}
+.link-color {
+	color: #68a8ff;
+}
+.p-40 {
+	padding: 40px 20px;
+}
+.pl-20 {
+	padding-left: 20px !important;
+}
+.pt-20 {
+	padding-top: 20px !important;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.col {
+	width: 100%;
+	padding: 10px 0px;
+}
+.color-theme {
+	color: #49ba9f;
+}
+.color-gray {
+	color: #aeafaf;
+}
+.color-red {
+	color: #e0343c;
+}
+.right-text {
+	text-align: right;
+}
+.btn-white {
+	border-radius: 50px;
+	padding: 9px 18px;
+	border: 1px solid #fff;
+	background-color: #fff;
+	margin-right: 8px;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+.btn-white:focus,
+.btn-white:hover {
+	outline: none;
+	background-color: #dedede;
+}
+.d-block {
+	display: block;
+}
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+}
+.align-end {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+.align-center {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.space-between {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.card {
+	border: 1px solid #dcdada;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.16);
+	border-radius: 5px;
+}
+.card p {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 13px;
+}
+.card-head {
+	background-size: cover;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 999;
+	color: #fff;
+	height: 230px;
+	border-radius: 4px 4px 0px 0px;
+}
+.card-head.bg-1 {
+	background-image: url('/src/images/college_02.jpg');
+}
+.card-head.bg-2 {
+	background-image: url('/src/images/college_01.jpg');
+}
+.rating p {
+	margin: 0px;
+}
+.rating {
+	background: #f5a721;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+	margin: 10px;
+	border-radius: 5px;
+}
+.card-content {
+	position: relative;
+	height: 100%;
+}
+.overlay {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 4px 4px 0px 0px;
+}
+.card-head .promoted {
+	background: #68a8ff;
+	color: #fff;
+	padding: 10px;
+	display: inline-block;
+	padding: 7px 30px;
+	position: relative;
+	margin-top: -14px;
+}
+.promoted:before {
+	content: '';
+	position: absolute;
+	background: transparent;
+	left: -15px;
+	top: 0px;
+	height: 29px;
+	width: 25px;
+	border-left: 14px solid #ff000000;
+	border-right: 14px solid #68a8ff;
+	border-bottom: 14px solid #68a8ff;
+	border-top: 14px solid #68a8ff;
+}
+.absolute-bottom {
+	position: absolute;
+	bottom: 0;
+	padding: 15px;
+	width: 100%;
+}
+
+.card-body {
+	padding: 20px 20px 0px;
+}
+.card-footer {
+	padding: 5px 20px 20px 0px;
+}
+.rounded-bg {
+	background-color: #cdf5e8;
+	padding: 9px 20px;
+	border-radius: 0 20px 20px 0px;
+}
+.line-mid {
+	text-decoration: line-through;
+}
+.deal {
+	background: #49ba9f;
+	padding: 6px 11px;
+	color: #fff;
+	position: relative;
+	margin-right: 26px;
+	display: inline-block;
+}
+.deal:before {
+	content: '';
+	border-right: 13px solid #ff000000;
+	border-bottom: 13px solid #49ba9f;
+	border-left: 13px solid #49ba9f;
+	border-top: 14px solid #49ba9f;
+	position: absolute;
+	top: 0px;
+	right: -16px;
+}
+.bg-red {
+	background: #e0343c;
+	color: #fff;
+	position: relative;
+	margin-left: 13px;
+	padding-right: 5px;
+}
+.bg-red i {
+	width: 5px;
+	height: 5px;
+	display: inline-block;
+	background: white;
+	border-radius: 20px;
+	margin: 2px 6px 2px 0px;
+}
+i.black-circle {
+	width: 4px;
+	height: 4px;
+	background: #49ba9f;
+	display: inline-block;
+	border-radius: 20px;
+	padding: 2px;
+	margin: 2px 4px;
+}
+.bg-red:before {
+	position: absolute;
+	left: -9px;
+	content: '';
+	border-right: 9px solid #e0343c;
+	border-bottom: 8px solid #ffff0000;
+	border-top: 8px solid #ffa50000;
+	top: 0;
+}
+.star-rating {
+	padding-left: 15px;
+}
+.star-rating .fa-star {
+	color: #928d8d;
+	font-size: 13px;
+}
+.star-rating .filled {
+	color: #1b1a19;
+}
+
+@media (min-width: 1080px) {
+}
+@media (min-width: 768px) {
+	.row,
+	.flex {
+		flex-wrap: initial;
+	}
+	.col {
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 540px) {
+	.btn-white {
+		margin-top: 12px;
+	}
+}
